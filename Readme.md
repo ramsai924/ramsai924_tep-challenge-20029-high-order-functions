@@ -11,8 +11,10 @@ Create a function called `sendMessage` that accepts a string and a function. The
 - Write a function called `each` which accepts two parameters: an array and a callback function. The `each` function should loop over the array passed to it and run the callback function on each element in it.
 ```js
 // this function should accept 2 parameters, put them in!
-function each(){
-    // put your code inside here!
+function each(arr,fun){
+    for(let i=0;i<arr.length;i++){
+     fun(arr[i]);
+  }
 }
 
 
